@@ -21,7 +21,7 @@ const ProfilePage = () => {
 
     let day = getDayName(date)
     let month = getMonth(date)
-    let dayMonth = date.getMonth()
+    let dayMonth = date.getDate()
     let year = date.getFullYear()
 
 
