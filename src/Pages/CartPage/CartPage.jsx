@@ -67,7 +67,7 @@ const CartPage = () => {
                 <Col>
                     <h2>Shopping Cart</h2>
                     <Card>
-                        <ListGroup variant="flush">
+                        <ListGroup variant="flush" style={{ padding: 20 }}>
                             {
                                 cartItems && showCart ?
                                     cartItems.map((item) => (

@@ -1,5 +1,6 @@
-import { Button, Container } from "react-bootstrap"
+import { Button, Col, Container, Row } from "react-bootstrap"
 import { Link } from "react-router-dom"
+import Ecommerce from '../../assets/img/E-commers.jpg'
 
 const Landing = () => {
 
@@ -7,10 +8,18 @@ const Landing = () => {
         <>
             <Container className="mt-5">
 
-                <h1>Bienvendo al E-commerce</h1>
-                <br></br>
+                <Row className="align-items-center justify-content-center">
+                    <Col>
+                        <img src={Ecommerce} alt="icomerce" style={{ width: 500 }} />
+                    </Col>
+                    <Col>
+                        <h1>Bienvendo al E-commerce</h1>
+                        <br></br>
 
-                <Button as="span" variant="dark"><Link to="/signIn">SignIn</Link></Button>
+                        <Button as="span" variant="dark" className="justfiy-content-center"><Link to="/signIn">SignIn</Link></Button>
+                    </Col>
+                </Row>
+
             </Container>
 
         </>

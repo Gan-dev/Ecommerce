@@ -61,6 +61,9 @@ const ProfilePage = () => {
                     ownerProduct && ownerProduct.length != 0 ? <ProductList products={ownerProduct} /> : <h1>No hay productos que mostrar</h1>
 
                 }
+                <hr />
+                <h2>Mis Pedidos</h2>
+                <p>PROXIMAMENTE.....</p>
 
                 <Modal show={showModal} onHide={() => setShowModal(false)}>
                     <Modal.Header closeButton>

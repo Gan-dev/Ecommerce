@@ -1,15 +1,26 @@
 import { useContext } from "react"
 import { AuthContext } from "../../context/auth.context"
-import { Container } from "react-bootstrap"
+import { Button, Col, Container, Row } from "react-bootstrap"
+import './Home.css'
+import ecommerce from '../../assets/img/E-commers.jpg'
+import { Link } from "react-router-dom"
 
 const Home = () => {
     const { user } = useContext(AuthContext)
     return (
         <>
             <Container className="mt-5">
-                <h1>Bienvendo al E-commerce {user.username}</h1>
-                <img src={user.avatar} alt={user.username} />
-                <br></br>
+                <Row className="home-body">
+                    <Col>
+                        <img src={ecommerce} alt="ecommerce" style={{ width: 550 }} />
+                    </Col>
+                    <Col>
+                        <h1>Bienvenido {user.username} <img src={user.avatar} alt={user.username} style={{ width: 50 }} /></h1>
+
+                        <Button variant="success" as="span" ><Link to={"/products"}>Ver Productos</Link></Button>
+
+                    </Col>
+                </Row>
             </Container>
         </>
     )
