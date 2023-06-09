@@ -82,4 +82,4 @@ function getHour(date) {
     return `${hour}:${minute}:${second}`
 }
 
-module.exports = { getDayName, getMonth, getHour }
+export { getDayName, getMonth, getHour }

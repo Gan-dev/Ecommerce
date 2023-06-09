@@ -25,4 +25,4 @@ function uniqueCart(cartItems, setCartItem, setTotal, calculatedTotals) {
 
 
 
-module.exports = { calculatedTotals, uniqueCart }
+export { calculatedTotals, uniqueCart }
