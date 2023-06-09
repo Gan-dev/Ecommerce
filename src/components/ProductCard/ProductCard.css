@@ -1,0 +1,12 @@
+.productCard {
+    align-items: center;
+}
+
+
+
+.productCard img {
+    margin-top: 20px;
+    width: 20vh;
+    height: 20vh;
+    object-fit: contain;
+}

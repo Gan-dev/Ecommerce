@@ -1,0 +1,11 @@
+img {
+    width: 250px;
+}
+
+.body-Property {
+    margin-top: 20px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+}
